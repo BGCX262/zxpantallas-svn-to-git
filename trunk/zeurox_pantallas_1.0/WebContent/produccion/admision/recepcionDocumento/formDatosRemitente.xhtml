@@ -1,0 +1,123 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+				<p:panelGrid columns="3" styleClass="noborder">
+					<h:outputText value="Datos del Remitente:" />
+					<p:selectOneRadio >
+						<f:selectItem itemLabel="Natural" itemValue="1" />
+						<f:selectItem itemLabel="Juridica" itemValue="2" /> 
+					</p:selectOneRadio> 
+				</p:panelGrid>
+				
+				<br />				
+				
+				<p:tabView id="tabView2"> 	
+				<p:tab title="Persona Natural:">
+				
+						<p:panelGrid columns="3" styleClass="noborder" >
+						<h:outputText value="Código de Socio" />
+						<p:inputText value="" styleClass="width_input"/>
+						<p:commandButton value="Buscar"></p:commandButton>
+						</p:panelGrid>
+						<br />
+						
+						<p:panelGrid columns="3" style="width:100%">
+							<f:facet name="header">
+								<h:outputText value="Datos para brindar información" />
+							</f:facet>
+							<h:outputText value="Nombre:*" styleClass="rigth"/>
+							<p:inputText value="" style="width:250px"/>
+							<p:panelGrid columns="6" styleClass="noborder" >
+								<h:outputText value="Departamento:*" />
+								<p:selectOneMenu styleClass="width_select2">
+									<f:selectItem itemLabel="La Libertad" />
+									<f:selectItem itemLabel="Arequipa" />  
+									<f:selectItem itemLabel="Lima" />  
+								</p:selectOneMenu>
+								<h:outputText value="Provincia:*" />
+								<p:selectOneMenu styleClass="width_select2">
+									<f:selectItem itemLabel="Oyon" />
+									<f:selectItem itemLabel="Lima"  /> 									  
+								</p:selectOneMenu>
+								<h:outputText value="Distrito:*" />
+								<p:selectOneMenu styleClass="width_select2">
+									<f:selectItem itemLabel="Lurin"  />
+									<f:selectItem itemLabel="Lince"  />  
+									<f:selectItem itemLabel="Ate"  />  
+								</p:selectOneMenu>
+							</p:panelGrid>
+							<h:outputText value="Apellido Paterno:*" styleClass="rigth"/>
+							<p:inputText value="" style="width:250px"/>
+							<p:panelGrid columns="2" styleClass="noborder">
+								<h:outputText value="Dirección:*" />
+								<p:inputText value="" style="margin-left:33px;width:690px"/>
+							</p:panelGrid>
+							<h:outputText value="Apellido Materno:*" styleClass="rigth"/>
+							<p:inputText value="" style="width:250px"/>
+							<p:panelGrid columns="4" styleClass="noborder">
+								<h:outputText value="Email:*" />
+								<p:inputText value="" style="margin-left:55px;" styleClass="width_input"/>
+								<h:outputText value="Teléfono:*" style="margin-left:80px;"/>
+								<p:inputText value="" styleClass="width_input"/>
+							</p:panelGrid>
+							<h:outputText value="DNI:*" styleClass="rigth"/>
+							<p:inputText value="" style="width:250px"/>
+							<h:outputText value="" />
+						</p:panelGrid>  
+				    </p:tab>   
+				    <p:tab title="Persona Juridica" disabled="false">  
+						<p:panelGrid columns="3" styleClass="noborder" >
+						<h:outputText value="Código de Socio" />
+						<p:inputText value="" styleClass="width_input"/>
+						<p:commandButton value="Buscar"></p:commandButton>
+						</p:panelGrid>
+						<br />
+						
+						<p:panelGrid columns="3" style="width:100%">
+							<f:facet name="header">
+								<h:outputText value="Datos para brindar información" />
+							</f:facet>
+							<h:outputText value="Razon Social:*" styleClass="rigth" />
+							<p:inputText value="" styleClass="width_input"/>
+							<p:panelGrid columns="6" styleClass="noborder" >
+								<h:outputText value="Departamento:*" />
+								<p:selectOneMenu styleClass="width_select2">
+									<f:selectItem itemLabel="La Libertad" />
+									<f:selectItem itemLabel="Arequipa" />  
+									<f:selectItem itemLabel="Lima" />  
+								</p:selectOneMenu>
+								<h:outputText value="Provincia:*" />
+								<p:selectOneMenu styleClass="width_select2">
+									<f:selectItem itemLabel="Oyon" />
+									<f:selectItem itemLabel="Lima"  /> 									  
+								</p:selectOneMenu>
+								<h:outputText value="Distrito:*" />
+								<p:selectOneMenu styleClass="width_select2">
+									<f:selectItem itemLabel="Lurin"  />
+									<f:selectItem itemLabel="Lince"  />  
+									<f:selectItem itemLabel="Ate"  />  
+								</p:selectOneMenu>
+							</p:panelGrid>
+							<h:outputText value="Ruc:*" styleClass="rigth"/>
+							<p:inputText value="" styleClass="width_input"/>
+							<p:panelGrid columns="2" styleClass="noborder">
+								<h:outputText value="Dirección:*" />
+								<p:inputText value="" style="margin-left:33px;width:690px"/>
+							</p:panelGrid>
+							<h:outputText value="" />
+							<h:outputText value="" />
+							<p:panelGrid columns="4" styleClass="noborder">
+								<h:outputText value="Email:*" />
+								<p:inputText value="" style="margin-left:55px;" styleClass="width_input"/>
+								<h:outputText value="Teléfono:*" style="margin-left:80px;"/>
+								<p:inputText value="" styleClass="width_input"/>
+							</p:panelGrid>		
+						</p:panelGrid>	
+				    </p:tab>  
+					</p:tabView>
+	
+</ui:composition>

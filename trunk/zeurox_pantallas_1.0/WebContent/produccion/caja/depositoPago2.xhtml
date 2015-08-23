@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+<title>Depósito y Pagos</title>
+<style>
+.margin_left{
+	margin-left:-12px;
+}
+.width{
+	width: 100%;
+}
+.ui-widget{
+	font-size: 12px;
+}
+.rigth{
+	float:right;
+}
+.left{
+	float:left;
+}
+.width_input{
+	width:250px;
+}
+.width_input2{
+	width:150px;
+}
+.width_select{
+	width:150px;
+}	
+.width_select2{
+	width:160px;
+}
+.noborder tr,
+.noborder td	
+{
+    background: none !important;
+    border: none !important;
+}	
+.center{
+	margin:0 auto;
+}
+</style>
+</h:head> 
+<h:body>
+	<p:layout fullPage="true">
+	    <p:layoutUnit position="north" size="100" header="CAJA - Deposito y Pagos" resizable="true" closable="false" collapsible="true">
+	        <h:form>	        	
+	        	<h:commandButton action="/produccion/index.xhtml" value="Inicio"  styleClass="rigth"/>
+	        </h:form>
+	    </p:layoutUnit>
+	    <p:layoutUnit position="west" size="250" header="VENTANA" resizable="true" closable="false" collapsible="true">
+	        <h:form>     
+	           
+	        </h:form>
+	    </p:layoutUnit >
+	    <p:layoutUnit position="center">
+	        <h:form>	
+	        	
+	        	<br/>
+	        	<!-- Fecha -->
+	        	<ui:include src="/produccion/caja/depositosPago2/cabeceraFecha.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	<!-- Buscador -->
+	        	<ui:include src="/produccion/caja/depositosPago2/buscador.xhtml"></ui:include>
+	        	<br/><br/>
+        	
+        		
+	        	<!-- Información del Socio -->
+	        	<ui:include src="/produccion/caja/depositosPago2/formInfSocio.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	
+	        	<!-- Información del Depositante -->
+	        	<ui:include src="/produccion/caja/depositosPago2/formInfDepositante.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	<!-- Información del Depositante -->
+	        	<ui:include src="/produccion/caja/depositosPago2/comboTipoDeposito.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	<!-- Información del Depositante -->
+	        	<ui:include src="/produccion/caja/depositosPago2/informacionDeposito.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	<!-- Información del Depositante -->
+	        	<ui:include src="/produccion/caja/depositosPago2/boton.xhtml"></ui:include>
+	        </h:form>
+	    </p:layoutUnit>
+	</p:layout>
+</h:body> 
+</html>

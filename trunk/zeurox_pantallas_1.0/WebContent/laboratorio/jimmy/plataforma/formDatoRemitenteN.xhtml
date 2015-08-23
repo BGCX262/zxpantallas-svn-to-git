@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+				<p:panelGrid columns="6" style="width:100%">
+				    
+				    
+					<f:facet name="header">
+					
+						<h:outputText value="Buscar:" />
+						<h:selectOneMenu>
+						<f:selectItem itemLabel="DNI" />
+						<f:selectItem itemLabel="Apellido" />  
+						<f:selectItem itemLabel="otros" />  
+					</h:selectOneMenu>
+					<p:inputText></p:inputText>
+					<p:commandButton value="Buscar" type="button"></p:commandButton>
+					<p:inputText value="28/02/2012" disabled="true" style="width:70px"></p:inputText>
+					</f:facet>
+					<h:outputText value="AP. Paterno:*" />
+					<p:inputText value="" style="width:250px"/>
+					<h:outputText value="AP. Materno:*" />
+					<p:inputText value="" style="width:250px"/>
+					<h:outputText value="Nombres:*" />
+					<p:inputText value="" style="width:250px"/>
+					<h:outputText value="Documento:*" />
+					<p:selectOneMenu>
+						<f:selectItem itemLabel="DNI" />
+						<f:selectItem itemLabel="Pasaporte" />  
+						<f:selectItem itemLabel="Militar" />  
+					</p:selectOneMenu>
+					<h:outputText value="Número Doc:*" />
+					<p:inputText value="" style="width:250px"/>
+					<h:outputText value="Estado Civil:*" />
+					<p:selectOneMenu>
+						<f:selectItem itemLabel="Conviviente" />
+						<f:selectItem itemLabel="Casado" />  
+						<f:selectItem itemLabel="Soltero" />  
+					</p:selectOneMenu>
+					<h:outputText value="Tipo. Telef:" />
+					<p:selectOneMenu>
+						<f:selectItem itemLabel="Fijo" />
+						<f:selectItem itemLabel="Celular" />  
+						<f:selectItem itemLabel="Nextel" />  
+					</p:selectOneMenu>
+					<h:outputText value="Número:" />
+					<p:inputText value=""></p:inputText>
+					<h:outputText value="Anexo:" />
+					<p:inputText value=""></p:inputText>
+				    </p:panelGrid>
+				    
+				  
+	
+</ui:composition>

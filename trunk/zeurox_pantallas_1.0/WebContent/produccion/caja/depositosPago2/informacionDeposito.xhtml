@@ -1,0 +1,27 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+				
+				
+				<p:panel styleClass="width center">
+					<f:facet name="header">Información del Depósito</f:facet>
+					
+					<br/>
+					<!-- Tabla Prestamos por Socio -->
+					<ui:include src="/produccion/caja/depositosPago2/informacionDeposito/tablaBusqueda.xhtml" />
+					
+					<br/>
+					
+					<p:panelGrid columns="2" styleClass="center noborder">
+						<h:outputText value="Código de Préstamo:" styleClass="rigth" />
+						<p:inputText value="CUENTA DE AHORROS 2" disabled="true"></p:inputText>
+					</p:panelGrid>
+					
+					
+					<br/>
+					<!-- Tabla Prestamos por Socio -->
+					<ui:include src="/produccion/caja/depositosPago2/informacionDeposito/monto.xhtml" />
+				</p:panel>
+</ui:composition>

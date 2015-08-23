@@ -1,0 +1,26 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+					
+				<p:panelGrid columns="2" styleClass="width center">
+				<f:facet name="header">Información del Depositante</f:facet>
+					<h:outputText value="Nombres:"  styleClass="rigth"/>
+					<p:inputText ></p:inputText>
+					<h:outputText value="Tipo Documento:"  styleClass="rigth"/>
+					<h:panelGrid columns="5" styleClass="noborder">
+						<p:selectOneMenu styleClass="width_input margin_left">
+							<f:selectItem itemLabel="Pasaporte" />
+							<f:selectItem itemLabel="Pasaporte" />  
+							<f:selectItem itemLabel="Pasaporte" />  
+						</p:selectOneMenu>
+						<h:outputText value="Documento:" />
+						<p:inputText styleClass="width_input" ></p:inputText>
+						<p:commandButton value="Es socio"></p:commandButton>
+						<p:commandButton value="Limpiar"></p:commandButton>
+					</h:panelGrid>
+				</p:panelGrid>
+				
+</ui:composition>

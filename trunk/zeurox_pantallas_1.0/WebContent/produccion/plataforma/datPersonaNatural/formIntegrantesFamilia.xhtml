@@ -1,0 +1,92 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+				<p:panel >
+				<f:facet name="header">Integrantes Familia</f:facet>
+				
+					<p:panelGrid columns="6" styleClass="width">				
+						<h:outputText value="AP. Paterno:"  styleClass="rigth" />
+						<p:inputText value=""  styleClass="left width_input"/>
+						<h:outputText value="AP. Materno:"  styleClass="rigth"/>
+						<p:inputText value=""  styleClass="left width_input"/>
+						<h:outputText value="Nombres:"   styleClass="rigth" />
+						<p:inputText value=""  styleClass="left width_input"/>
+						
+						<h:outputText value="Documento:"  styleClass="rigth"/>
+						<p:selectOneMenu styleClass="left width_select">
+							<f:selectItem itemLabel="Libreta Electoral" />
+							<f:selectItem itemLabel="Boleta" />  
+							<f:selectItem itemLabel="DNI" />  
+						</p:selectOneMenu>
+						<h:outputText value="Número Doc:"  styleClass="rigth" />
+						<p:inputText value=""  styleClass="left width_input"/>
+						<h:outputText value="Fecha de Nacimienot"  styleClass="rigth" />
+						<p:calendar showOn="button" styleClass="left width_input" />							
+						
+						
+						<h:outputText value="Parentesco:"  styleClass="rigth" />
+						<p:selectOneMenu styleClass="left width_select">
+							<f:selectItem itemLabel="Hijo" />
+							<f:selectItem itemLabel="Hijo" />  
+							<f:selectItem itemLabel="Hijo" />  
+						</p:selectOneMenu>
+						<h:outputText value="Ocupación:"  styleClass="rigth" />
+						<p:inputText value=""  styleClass="left width_input"/>
+						<h:outputText value="" />
+						<h:outputText value="" />
+						
+					</p:panelGrid>
+					
+					<br/>
+					
+					<p:panelGrid columns="2" styleClass="noborder center">
+				     	<p:commandButton value="Agregar"></p:commandButton>	     	
+				     	<p:commandButton value="Limpiar"></p:commandButton>
+		     		</p:panelGrid>
+
+					<br/>
+										
+					<p:dataTable id="table3" var="tab" value="#{table.listBean}">
+						<p:column headerText="Tipo Ingreso">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Nombre Empresa">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Cargo">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Fecha Ingreso">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Ingreso Mensual">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Telefono">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Dirección Empresa">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Eliminar">
+							<h:link value="Eliminar"></h:link>
+						</p:column>
+						
+						<p:column headerText="Editar">
+							<h:link value="Editar"></h:link>
+						</p:column>
+					</p:dataTable>
+				
+				</p:panel>
+</ui:composition>

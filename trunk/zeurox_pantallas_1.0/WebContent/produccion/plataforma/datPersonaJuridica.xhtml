@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+<title>Datos Persona Juridica</title>
+<style>
+.margin_left{
+	margin-left:-12px;
+}
+.width{
+	width: 100%;
+}
+.ui-widget{
+	font-size: 12px;
+}
+.rigth{
+	float:right;
+}
+.left{
+	float:left;
+}
+.width_input{
+	width:250px;
+}
+.width_input2{
+	width:150px;
+}
+.width_select{
+	width:150px;
+}	
+.width_select2{
+	width:160px;
+}
+.noborder tr,
+.noborder td	
+{
+    background: none !important;
+    border: none !important;
+}	
+.center{
+	margin:0 auto;
+}
+</style>
+</h:head> 
+<h:body>
+	<p:layout fullPage="true">
+	    <p:layoutUnit position="north" size="100" header="PLATAFORMA-REGISTRO" resizable="true" closable="false" collapsible="true">
+	        <h:form>
+	        	<h:outputText value="este es una navegación privisional" styleClass="center" />
+	        	<h:commandButton value="Registro Datos Persona Natural" action="/produccion/plataforma/datPersonaNatural.xhtml" />
+	        	<h:commandButton value="Registro Datos Persona Juridica" action="/produccion/plataforma/datPersonaJuridica.xhtml"/>
+	        	<h:commandButton action="/produccion/index.xhtml" value="Inicio"  styleClass="rigth"/>
+	        	    	
+	        </h:form>
+	    </p:layoutUnit>
+	    <p:layoutUnit position="west" size="250" header="VENTANA" resizable="true" closable="false" collapsible="true">
+	        <h:form>    
+	        	  
+	        </h:form>
+	    </p:layoutUnit >
+	    <p:layoutUnit position="center">
+	        <h:form>	
+	        		<!-- Buscador -->	        		
+	        		<ui:include src="/produccion/plataforma/datPersonaJuridica/buscador.xhtml" />
+	        		<br/><br/>
+	        		
+	        		<!-- Buscador -->
+	        		<ui:include src="/produccion/plataforma/datPersonaJuridica/formDatosEmpresa.xhtml" />
+	        		<br/>
+	        		
+	        		<!-- Buscador -->
+	        		<ui:include src="/produccion/plataforma/datPersonaJuridica/formRepresentanteLegal.xhtml" />
+	        		<br/><br/>
+	        		
+	        		<!-- Buscador -->
+	        		<ui:include src="/produccion/plataforma/datPersonaJuridica/tablaTelefono.xhtml" />
+	        		<br/><br/>
+	        		
+	        		<!-- Buscador -->
+	        		<ui:include src="/produccion/plataforma/datPersonaJuridica/formDireccion.xhtml" />
+	        		<br/><br/>
+	        		
+	        		<!-- Buscador --> 
+	        		<ui:include src="/produccion/plataforma/datPersonaJuridica/formDatosAdicionales.xhtml" />
+	        		<br/><br/>
+	        		
+	        		<!-- Buscador -->
+	        		<ui:include src="/produccion/plataforma/datPersonaJuridica/formDatoAccesoSistema.xhtml" />
+	        		<br/>
+	        		
+	        		<!-- Buscador -->
+	        		<ui:include src="/produccion/plataforma/datPersonaJuridica/boton.xhtml" />
+	        		<br/><br/>
+	        </h:form>
+	    </p:layoutUnit>
+	</p:layout>
+</h:body> 
+</html>

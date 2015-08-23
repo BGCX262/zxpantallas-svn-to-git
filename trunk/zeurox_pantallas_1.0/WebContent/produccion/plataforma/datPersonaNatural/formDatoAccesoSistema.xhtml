@@ -1,0 +1,17 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+				
+				<p:panel styleClass="width center">
+				<f:facet name="header">Datos de Acceso al Sistema</f:facet>				
+				<p:panelGrid columns="4" styleClass="noborder center">				
+					<h:outputText value="Clave:"/>
+					<p:password styleClass="width_input"></p:password>
+					<h:outputText value="Confirmar Clave:"/>
+					<p:password styleClass="width_input"></p:password>					
+				</p:panelGrid>
+				</p:panel>
+</ui:composition>

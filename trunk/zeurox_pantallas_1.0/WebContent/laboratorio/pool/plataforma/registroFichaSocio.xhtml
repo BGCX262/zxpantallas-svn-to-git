@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+<title>Brindar Información</title>
+<style>
+.margin_left{
+	margin-left:-12px;
+}
+.width{
+	width: 100%;
+}
+.ui-widget{
+	font-size: 14px;
+}
+.rigth{
+	float:right;
+}
+.left{
+	float:left;
+}
+.width_input{
+	width:250px;
+}
+.width_input2{
+	width:150px;
+}
+.width_select{
+	width:150px;
+}	
+.width_select2{
+	width:160px;
+}
+.noborder tr,
+.noborder td	
+{
+    background: none !important;
+    border: none !important;
+}	
+.center{
+	margin:0 auto;
+}
+</style>
+</h:head> 
+<h:body>
+	<p:layout fullPage="true">
+	    <p:layoutUnit position="north" size="100" header="ADMISION-Brindar Información" resizable="true" closable="true" collapsible="true">
+	        <h:form>
+	        	
+	        </h:form>
+	    </p:layoutUnit>
+	    <p:layoutUnit position="west" size="250" header="VENTANA" resizable="true" closable="true" collapsible="true">
+	        <h:form>    
+	           
+	        	  
+	        </h:form>
+	    </p:layoutUnit >
+	    <p:layoutUnit position="center">
+	        <h:form>
+	        	<!-- Buscador -->	
+	        	<ui:include src="/laboratorio/pool/plataforma/buscador.xhtml" />
+	        	<br/><br/>
+	        	
+	        	<!-- Cabecera de Registro de ficha socio -->
+	        	<ui:include src="/laboratorio/pool/plataforma/cabecera.xhtml" />
+	        	<br/><br/>
+	        	
+	        	<!-- Datos del Remitente -->
+	        	<ui:include src="/laboratorio/pool/plataforma/formDatosRemitente.xhtml"></ui:include>
+	        	<br/><br/>
+	   
+	   			<!-- Dirección -->
+	        	<ui:include src="/laboratorio/pool/plataforma/formDireccion.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	<!-- Datos de Acceso al Sistema -->
+	        	<ui:include src="/laboratorio/pool/plataforma/formDatoAccesoSistema.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	<!-- Datos Adicionales -->
+	        	<ui:include src="/laboratorio/pool/plataforma/formDatosAdicionales.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	<!-- Datos Adicionales -->
+	        	<ui:include src="/laboratorio/pool/plataforma/formDatosConyugue.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	<!-- Datos Adicionales -->
+	        	<ui:include src="/laboratorio/pool/plataforma/formIntegrantesFamilia.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	<!-- Formularios Datos Laborales y Otros Ingresos -->
+	        	<ui:include src="/laboratorio/pool/plataforma/formDatosLaboralesOtrIngresos.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        	<!-- Formularios Datos Laborales y Otros Ingresos -->
+	        	<ui:include src="/laboratorio/pool/plataforma/tablaTelefono.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+	        </h:form>
+	    </p:layoutUnit>
+	</p:layout>
+</h:body> 
+</html>

@@ -1,0 +1,32 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+				<p:panelGrid columns="6" styleClass="width">
+				<f:facet name="header">Datos Adicionales</f:facet>
+					<h:outputText value="Fecha de Nac.:"  styleClass="rigth"/>
+					<p:calendar></p:calendar>
+					<h:outputText value="Sexo:"  styleClass="rigth"/>
+					<p:selectOneMenu styleClass="width_select ">
+							<f:selectItem itemLabel="Avenida" />
+							<f:selectItem itemLabel="Avenida" />  
+							<f:selectItem itemLabel="Avenida" />  
+					</p:selectOneMenu>
+					<h:outputText value="Grado Instucción:"  styleClass="rigth"/>
+					<p:selectOneMenu styleClass="width_select ">
+							<f:selectItem itemLabel="Avenida" />
+							<f:selectItem itemLabel="Avenida" />  
+							<f:selectItem itemLabel="Avenida" />  
+					</p:selectOneMenu>
+					<h:outputText value="Ocupación:"  styleClass="rigth"/>
+					<p:inputText styleClass="left width_input"></p:inputText>
+					<h:outputText value="Profesión:"  styleClass="rigth"/>
+					<p:inputText styleClass="left width_input"></p:inputText>
+					<h:outputText value="Ingreso Mensual:"  styleClass="rigth"/>
+					<p:inputText styleClass="left width_input"></p:inputText>
+				</p:panelGrid>
+	
+</ui:composition>

@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<h:form id="principal">
+		<p:fieldset legend="Datos Generales">
+    		<h:panelGrid columns="1" cellpadding="10">
+    			<p:row>
+    				<p:column>
+    					<h:outputText value="Apellido Paterno:" />
+						<p:inputText value="" size="40"/>
+    				</p:column>
+    				<p:column>
+    					<h:outputText value="Apellido Materno:"/>
+						<p:inputText value=""  size="40"/>
+    				</p:column>
+    			</p:row>
+    			<p:row>
+    				<p:column>
+    					<h:outputText value="Nombres:" />
+						<p:inputText value="" size="112"/>
+    				</p:column>
+    			</p:row>
+			</h:panelGrid>
+		</p:fieldset>
+	</h:form>
+</html>

@@ -1,0 +1,36 @@
+.margin_left{
+	margin-left:-12px;
+}
+.width{
+	width: 100%;
+}
+.ui-widget{
+	font-size: 14px;
+}
+.rigth{
+	float:right;
+}
+.left{
+	float:left;
+}
+.width_input{
+	width:250px;
+}
+.width_input2{
+	width:150px;
+}
+.width_select{
+	width:150px;
+}	
+.width_select2{
+	width:160px;
+}
+.noborder tr,
+.noborder td	
+{
+    background: none !important;
+    border: none !important;
+}	
+.center{
+	margin:0 auto;
+}

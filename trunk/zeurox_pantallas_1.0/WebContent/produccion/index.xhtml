@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      > 
+
+<h:head>
+<title>Producción</title>
+<style>
+	.ui-widget{
+		font-size: 14px;
+	}
+	.noborder tr,
+	.noborder td	
+	{
+	    background: none !important;
+	    border: none !important;
+	}	
+	.center{
+		margin:0 auto;
+	}
+	.colorlink{
+		color: blue;
+	}
+	.tamanio{
+		height: 200px;
+	}
+</style>
+</h:head> 
+<h:body>
+	<p:layout fullPage="true">
+	    <p:layoutUnit position="north" size="100" header="TÍTULO" resizable="true" closable="true" collapsible="true">
+	        <h:form>
+	        </h:form>
+	    </p:layoutUnit>
+	    <p:layoutUnit position="west" size="250" header="MENU" resizable="true" closable="true" collapsible="true">
+	        <h:form>            
+	        </h:form>
+	    </p:layoutUnit>
+	    <p:layoutUnit position="center">
+	        <h:form>
+	        	<p:panelGrid columns="5" styleClass="noborder center">
+	        		<p:panel styleClass="tamanio">
+	        			<f:facet name="header">Admisión</f:facet>
+	        			<h:commandLink value="Brindar Información" action="/produccion/admision/brindarInfo.xhtml" /><br/>
+	        			<h:commandLink value="Recepación de Documentos" action="/produccion/admision/recepcionDoc.xhtml" />
+	        		</p:panel>
+	        		<p:panel  styleClass="tamanio">
+	        			<f:facet name="header">Plataforma</f:facet>
+	        		</p:panel>
+	        		<p:panel styleClass="tamanio">
+	        			<f:facet name="header">Gerencia</f:facet>
+	        		</p:panel>
+	        		<p:panel styleClass="tamanio">
+	        			<f:facet name="header">Caja</f:facet>
+	        		</p:panel>
+	        		<p:panel styleClass="tamanio">
+	        			<f:facet name="header">Administración</f:facet>
+	        		</p:panel>
+	        	</p:panelGrid>	
+	        </h:form>
+	    </p:layoutUnit>
+	</p:layout>
+</h:body> 
+</html>

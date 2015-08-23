@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>     
+<h:head>
+<style>
+	.noborder tr,
+	.noborder td	
+	{
+	    background: none !important;
+	    border: none !important;
+	  
+	}
+	.d
+	{
+	float: right;
+	}
+	.center{
+		margin:0 auto;
+	}	
+	
+	 body{
+                margin: 0;
+	            padding: 0;
+	            font-family: "Arial";
+	            font-size: 10px;
+                }
+</style>
+</h:head>
+<h:body>
+	<p:layout fullPage="true">
+    
+    <p:layoutUnit position="north" header="top">
+    </p:layoutUnit>
+    
+    <p:layoutUnit position="west" header="west" closable="false" resizable="true" collapsible="true" size="200">
+     <p:calendar mode="inline" navigator="none" ></p:calendar>
+    </p:layoutUnit>
+    
+    <p:layoutUnit position="center">
+    <h:form>
+       <ui:include src="/laboratorio/jimmy/plataforma/formTableSocioN.xhtml"/>
+       <ui:include src="/laboratorio/jimmy/plataforma/formDatoRemitenteN.xhtml"/> 
+       <ui:include src="/laboratorio/jimmy/plataforma/formDireccionN.xhtml"/> 
+       <ui:include src="/laboratorio/jimmy/plataforma/buttonRegSolicitudSocioN.xhtml"/>
+    </h:form>
+    </p:layoutUnit> 
+
+   </p:layout>
+                        
+</h:body> 
+</f:view>      
+</html>

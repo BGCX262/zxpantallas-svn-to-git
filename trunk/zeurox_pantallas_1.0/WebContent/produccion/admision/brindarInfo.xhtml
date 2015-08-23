@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+<title>Brindar Información</title>
+<style>
+.margin_left{
+	margin-left:-12px;
+}
+.width{
+	width: 100%;
+}
+.ui-widget{
+	font-size: 14px;
+}
+.rigth{
+	float:right;
+}
+.left{
+	float:left;
+}
+.width_input{
+	width:250px;
+}
+.width_input2{
+	width:150px;
+}
+.width_select{
+	width:150px;
+}	
+.width_select2{
+	width:160px;
+}
+.noborder tr,
+.noborder td	
+{
+    background: none !important;
+    border: none !important;
+}	
+.center{
+	margin:0 auto;
+}
+</style>
+</h:head> 
+<h:body>
+	<p:layout fullPage="true">
+	    <p:layoutUnit position="north" size="100" header="ADMISION-Brindar Información" resizable="true" closable="true" collapsible="true">
+	        <h:form>
+	        	<h:outputText value="este es una navegación eventual" />
+	        	<h:commandButton action="/produccion/admision/brindarInfo.xhtml" value="Brindar Información" />
+	        	<h:commandButton action="/produccion/admision/recepcionDoc.xhtml" value="Recepción Documento" />
+	        </h:form>
+	    </p:layoutUnit>
+	    <p:layoutUnit position="west" size="250" header="VENTANA" resizable="true" closable="true" collapsible="true">
+	        <h:form>     
+	            <!-- Menú -->
+	        	<ui:include src="/produccion/admision/add/menuLateral.xhtml"></ui:include>  
+	        </h:form>
+	    </p:layoutUnit >
+	    <p:layoutUnit position="center">
+	        <h:form>	
+	        	
+	        	<br/>
+	        	<!-- Número de consulta -->
+	        	<ui:include src="/produccion/admision/brindarInformacion/cabeceraNum.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+				<!-- Formulario Datos para Brindar Información -->
+	        	<ui:include src="/produccion/admision/brindarInformacion/formDarInfo.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+				<!-- Formulario Dirección -->
+	        	<ui:include src="/produccion/admision/brindarInformacion/formDireccion.xhtml"></ui:include>
+	        	<br/><br/>
+	        		        	
+				<!-- Tabla Más Información -->
+	        	<ui:include src="/produccion/admision/brindarInformacion/tablaMasInfo.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+				<!-- Botones -->
+	        	<ui:include src="/produccion/admision/brindarInformacion/boton.xhtml"></ui:include>
+	        	<br/><br/>	        	
+	        </h:form>
+	    </p:layoutUnit>
+	</p:layout>
+</h:body> 
+</html>

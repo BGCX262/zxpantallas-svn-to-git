@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+<title>Recepción de Documento</title>
+<style>
+.margin_left{
+	margin-left:-12px;
+}
+.ui-widget{
+	font-size: 14px;
+}
+.center{
+	margin:0 auto;
+}
+.rigth{
+	float:right;
+}
+.left{
+	float:left;
+}
+.width{
+	width: 100%;
+}
+.width_input{
+	width:250px;
+}
+.width_input2{
+	width:150px;
+}
+.width_select{
+	width:150px;
+}	
+.width_select2{
+	width:160px;
+}
+.noborder tr,
+.noborder td	
+{
+    background: none !important;
+    border: none !important;
+}	
+</style>
+</h:head> 
+<h:body>
+	<p:layout fullPage="true">
+	    <p:layoutUnit position="north" size="100" header="ADMISION-Recepción de Documento" resizable="true" closable="true" collapsible="true">
+	        <h:form>
+	        	<h:outputText value="este es una navegación eventual" />
+	        	<h:commandButton action="/produccion/admision/brindarInfo.xhtml" value="Brindar Información" />
+	        	<h:commandButton action="/produccion/admision/recepcionDoc.xhtml" value="Recepción Documento" />
+	        </h:form>
+	    </p:layoutUnit>
+	    <p:layoutUnit position="west" size="250" header="MENU" resizable="true" closable="true" collapsible="true">
+	        <h:form>     
+	            <!-- Menú -->
+	        	<ui:include src="/produccion/admision/add/menuLateral.xhtml"></ui:include>  
+	        </h:form>
+	    </p:layoutUnit>
+	    <p:layoutUnit position="center">
+	        <h:form>
+	        
+	        	<br/>
+	        	<!-- Número de consulta -->
+	        	<ui:include src="/produccion/admision/recepcionDocumento/cabeceraNum.xhtml"></ui:include>
+	        	<br/><br/>
+	        		
+				<!-- Formulario Información del Documento -->
+	        	<ui:include src="/produccion/admision/recepcionDocumento/formInfoDoc.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+				<!-- Formulario Datos del Remitente -->
+	        	<ui:include src="/produccion/admision/recepcionDocumento/formDatosRemitente.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+				<!-- Formulario Dirección -->
+	        	<ui:include src="/produccion/admision/recepcionDocumento/formDireccion.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+				<!-- Tabla de Busqueda -->
+	        	<ui:include src="/produccion/admision/recepcionDocumento/tablaBusqueda.xhtml"></ui:include>
+	        	<br/><br/>
+	        	
+				<!-- Botones -->
+	        	<ui:include src="/produccion/admision/recepcionDocumento/boton.xhtml"></ui:include>
+	        	<br/><br/>	        	
+	        </h:form>
+	    </p:layoutUnit>
+	</p:layout>
+</h:body> 
+</html>

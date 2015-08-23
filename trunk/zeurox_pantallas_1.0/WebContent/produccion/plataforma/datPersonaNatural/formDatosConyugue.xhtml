@@ -1,0 +1,69 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+				<p:panel>
+					<f:facet name="header">Datos del Conyugue</f:facet>				
+					<p:fieldset>
+					<p:panelGrid columns="6" styleClass="noborder center">						
+						<p:selectOneRadio >
+							<f:selectItem itemLabel="Registar Datos Conyugue" itemValue="1" />						
+						</p:selectOneRadio> 
+						<h:outputText value="Buscar" />
+						<p:selectOneMenu styleClass="width_select"  >
+							<f:selectItem itemLabel="DNI" />
+							<f:selectItem itemLabel="DNI" />  
+							<f:selectItem itemLabel="DNI" />  
+						</p:selectOneMenu>
+						<p:inputText></p:inputText>
+						<p:commandButton value="Buscar"></p:commandButton>
+					</p:panelGrid>
+					</p:fieldset>
+					<br/>
+					<p:panelGrid columns="6" styleClass="width">				
+						<h:outputText value="AP. Paterno:"  styleClass="rigth" />
+						<p:inputText value=""  styleClass="left width_input"/>
+						<h:outputText value="AP. Materno:"  styleClass="rigth"/>
+						<p:inputText value=""  styleClass="left width_input"/>
+						<h:outputText value="Nombres:*"   styleClass="rigth" />
+						<p:inputText value=""  styleClass="left width_input"/>
+						<h:outputText value="Documento:"  styleClass="rigth"/>
+						<p:selectOneMenu styleClass="left width_select">
+							<f:selectItem itemLabel="Libreta Electoral" />
+							<f:selectItem itemLabel="Boleta" />  
+							<f:selectItem itemLabel="DNI" />  
+						</p:selectOneMenu>
+						<h:outputText value="Número Doc:"  styleClass="rigth" />
+						<p:inputText value=""  styleClass="left width_input"/>
+						<h:outputText value="Estado Civil:*"  styleClass="rigth" />
+						<p:selectOneMenu styleClass="left width_select">
+							<f:selectItem itemLabel="Conviviente" />
+							<f:selectItem itemLabel="Conviviente" />  
+							<f:selectItem itemLabel="Conviviente" />  
+						</p:selectOneMenu>
+						<h:outputText value="Fecha de Nacimineto:"  styleClass="rigth" />
+						<p:calendar showOn="button" styleClass="left width_input" />	
+						<h:outputText value="Sexo:"  styleClass="rigth" />
+						<p:selectOneMenu styleClass="left width_select">
+							<f:selectItem itemLabel="Masculino" />
+							<f:selectItem itemLabel="Masculino" />  
+							<f:selectItem itemLabel="Masculino" />  
+						</p:selectOneMenu>
+						<h:outputText value="Grado Instrucción:"  styleClass="rigth" />
+						<p:selectOneMenu styleClass="left width_select">
+							<f:selectItem itemLabel="Superior" />
+							<f:selectItem itemLabel="Superior" />  
+							<f:selectItem itemLabel="Superior" />  
+						</p:selectOneMenu>
+						<h:outputText value="Ocupación:"  styleClass="rigth" />
+						<p:inputText value=""  styleClass="left width_input"/>
+						<h:outputText value="Profesión:"  styleClass="rigth" />
+						<p:inputText value=""  styleClass="left width_input"/>
+						<h:outputText value="Ingreso Mensual:"  styleClass="rigth" />
+						<p:inputText value=""  styleClass="left width_input"/>
+					</p:panelGrid>		
+				</p:panel>
+</ui:composition>

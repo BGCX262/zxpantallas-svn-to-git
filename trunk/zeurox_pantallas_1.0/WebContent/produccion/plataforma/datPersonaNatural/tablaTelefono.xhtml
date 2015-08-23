@@ -1,0 +1,54 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+				
+				<p:panel styleClass="center">
+				<f:facet name="header">Teléfono</f:facet>
+				
+				<p:fieldset>				
+				<p:panelGrid columns="8" styleClass="noborder center">
+					<h:outputText value="Tipo de Teléfono:" />
+					<p:selectOneMenu >
+						<f:selectItem itemLabel="Fijo" />
+						<f:selectItem itemLabel="Fijo" />  
+						<f:selectItem itemLabel="Fijo" />  
+					</p:selectOneMenu>
+					<h:outputText value="Número:" />
+					<p:inputText></p:inputText>					
+					<h:outputText value="Anexo:" />
+					<p:inputText></p:inputText>
+					<p:commandButton value="Agregar"></p:commandButton>
+					<p:commandButton value="Limpiar"></p:commandButton>
+				</p:panelGrid>
+				</p:fieldset>
+				
+				<br/>
+				
+				
+				<p:dataTable id="table" var="tab" value="#{table.listBean}">
+					<p:column headerText="Tipo Teléfono">
+						<h:outputText value="#{tab.tipo}" />
+					</p:column>
+					
+					<p:column headerText="Número">
+						<h:outputText value="#{tab.numero}" />
+					</p:column>
+					
+					<p:column headerText="Anexo">
+						<h:outputText value="#{tab.anexo}" />
+					</p:column>
+					
+					<p:column headerText="Eliminar">
+						<h:link value="Eliminar"></h:link>						
+					</p:column>
+					
+					<p:column headerText="Editar">
+						<h:link value="Editar"></h:link>						
+					</p:column>
+				</p:dataTable>
+				
+				
+				</p:panel>	
+</ui:composition>

@@ -1,0 +1,69 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+				<p:panelGrid columns="6" styleClass="width">
+					<f:facet name="header">Dirección</f:facet>
+					<h:outputText value="Departamento:*" styleClass="rigth"/>
+					<p:selectOneMenu styleClass="left width_select">
+							<f:selectItem itemLabel="Lima" />
+							<f:selectItem itemLabel="Arequipa" />  
+							<f:selectItem itemLabel="La Libertad" />  
+					</p:selectOneMenu>
+					<h:outputText value="Provincia:*" styleClass="rigth"/>
+					<p:selectOneMenu styleClass="left width_select">
+						<f:selectItem itemLabel="La Libertad" />
+						<f:selectItem itemLabel="Arequipa" />  
+						<f:selectItem itemLabel="Trujillo" />  
+					</p:selectOneMenu>
+					<h:outputText value="Distrito:*" styleClass="rigth"/>
+					<p:selectOneMenu styleClass="left width_select">
+						<f:selectItem itemLabel="Lince" />
+						<f:selectItem itemLabel="Ate" />  
+						<f:selectItem itemLabel="Santiago Cao" />  
+					</p:selectOneMenu>
+					
+					<h:outputText value="Zona:" styleClass="rigth"/>
+					<h:panelGrid columns="2" styleClass="noborder">
+						<p:selectOneMenu styleClass="left width_select2 margin_left">
+							<f:selectItem itemLabel="Anexo" />
+							<f:selectItem itemLabel="Anexo" />  
+							<f:selectItem itemLabel="Anexo" />  
+						</p:selectOneMenu>
+						<p:inputText styleClass="width_input2"></p:inputText>
+					</h:panelGrid>
+					<h:outputText value="Via:" styleClass="rigth"/>
+					<h:panelGrid columns="2" styleClass="noborder">
+						<p:selectOneMenu styleClass="left width_select2 margin_left">
+							<f:selectItem itemLabel="Avenida" />
+							<f:selectItem itemLabel="Avenida" />  
+							<f:selectItem itemLabel="Avenida" />  
+						</p:selectOneMenu>
+						<p:inputText styleClass="width_input2"></p:inputText>
+					</h:panelGrid>
+					<h:outputText value="" />
+					<h:outputText value="" />
+					
+					<h:outputText value="Número:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					<h:outputText value="Lote:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					<h:outputText value="Kilometro:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					<h:outputText value="# Departamento:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					<h:outputText value="Manzana:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					<h:outputText value="Interior:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+				</p:panelGrid>
+				
+				<p:panel >
+					<h:outputText value="Referencia" />
+					<p:inputTextarea styleClass="width"></p:inputTextarea>
+				</p:panel>
+	
+</ui:composition>

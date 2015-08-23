@@ -1,0 +1,24 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+				<p:panelGrid columns="4" styleClass="width">
+					<f:facet name="header">Información del Socio</f:facet>
+					<h:outputText value="Código de Socio:" styleClass="rigth"/>
+					<p:inputText styleClass="width_input" disabled="true" />
+					<h:outputText value="Nombre:" styleClass="rigth"/>
+					<p:inputText value="" style="width:350px" disabled="true"/>
+					<h:outputText value="Tipo Documento:" styleClass="rigth"/>
+					<p:selectOneMenu styleClass="width_select">
+						<f:selectItem itemLabel="Pasaporte" />
+						<f:selectItem itemLabel="Pasaporte" />  
+						<f:selectItem itemLabel="Pasaporte" />  
+					</p:selectOneMenu>
+					<h:outputText value="Doc:" styleClass="rigth"/>
+					<p:inputText value="" styleClass="width_input" disabled="true"/>		
+				</p:panelGrid>
+					
+</ui:composition>

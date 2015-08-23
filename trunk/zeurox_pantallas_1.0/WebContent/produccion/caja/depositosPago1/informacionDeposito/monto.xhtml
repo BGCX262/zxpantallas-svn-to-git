@@ -1,0 +1,20 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+				<p:panelGrid columns="3" styleClass="noborder center">
+					<h:outputText value="Monto a Pagar:"  styleClass="rigth"/>
+					<p:inputText value="" styleClass="width_input" disabled="true" />
+					<p:commandButton value="Pagar todas las  cuotas" styleClass="width_input"></p:commandButton>
+					<h:outputText value="Confirmar MOnto a Pagar:" styleClass="rigth" />
+					<p:inputText value="" styleClass="width_input" disabled="true" />
+					<p:commandButton value="Limpiar" styleClass="width_input"></p:commandButton>
+					<h:outputText value="Monto a Pagar en Letras:" styleClass="rigth" />
+					<p:inputText value="" styleClass="width_input" disabled="true" />
+					<p:selectOneRadio >
+						<f:selectItem itemLabel="Monto personalizado" itemValue="1" />
+					</p:selectOneRadio> 
+				</p:panelGrid>
+</ui:composition>

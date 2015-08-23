@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+<title>formulario-pool</title>
+<style>
+.width{
+	width: 100%;
+}
+.rigth{
+	float:right;
+}
+.left{
+	float:left;
+}
+.width_input{
+	width:300px;
+}
+.width_select{
+	width:300px;
+}	
+.ui-widget{
+	font-size: 14px;
+}
+.noborder tr,
+.noborder td	
+{
+    background: none !important;
+    border: none !important;
+}
+.margin-left{
+	margin-left:-10px;
+}
+</style>
+</h:head>
+<h:body>
+	
+	<p:layout fullPage="true" styleClass="font_face">
+	    <p:layoutUnit position="north" size="100" header="TÍTULO" resizable="true" closable="true" collapsible="true">
+	        <h:form>
+	        </h:form>
+	    </p:layoutUnit>
+	    <p:layoutUnit position="west" size="250" header="MENU" resizable="true" closable="true" collapsible="true">
+	        <h:form>            
+	        </h:form>
+	    </p:layoutUnit>
+	    <p:layoutUnit position="center">
+	        <h:form>
+	        	<p:panelGrid columns="4" styleClass="width width_ouput">
+	        		<f:facet name="header">pruebas</f:facet>
+	        		<h:outputText value="prueba1 :" styleClass="rigth" />
+	        		<p:inputText value="" styleClass="left width_input"/>
+	        		<h:outputText value="prueba2:" styleClass="rigth" />
+	        		<p:inputText value="" styleClass="left width_input" />
+	        		<h:outputText value="prueba3:" styleClass="rigth"/>
+	        		<p:selectOneMenu styleClass="left width_select">
+						<f:selectItem itemLabel="Select1" />
+						<f:selectItem itemLabel="Select2" />  
+						<f:selectItem itemLabel="Select3" />  
+					</p:selectOneMenu>
+					<h:outputText value="prueba4:" styleClass="rigth"/>
+					<p:inputText value="" styleClass="left width_input" />
+					<h:outputText value="prueba5:" styleClass="rigth"/>
+	        		<p:selectOneMenu styleClass="left width_select">
+						<f:selectItem itemLabel="Select1" />
+						<f:selectItem itemLabel="Select2" />  
+						<f:selectItem itemLabel="Select3" />  
+					</p:selectOneMenu>	        		
+					<h:outputText value="prueba6:" styleClass="rigth"/>
+					<p:panelGrid columns="2" styleClass=" noborder margin-left">
+						<p:selectOneMenu styleClass="left width_select ">
+							<f:selectItem itemLabel="Select1" />
+							<f:selectItem itemLabel="Select2" />  
+							<f:selectItem itemLabel="Select3" />  
+						</p:selectOneMenu>
+						<p:inputText styleClass="left "></p:inputText>
+					</p:panelGrid>
+					
+	        	</p:panelGrid>	
+	        	
+	    <h:panelGrid columns="5" >
+             <p:inputText id="email" value="" />
+             <p:watermark for="email" value="Email"/>
+             <h:inputSecret id="password" value="" />
+             <p:watermark for="password" value="Password"/>
+             <p:commandButton id="login" value="Login" align="right"/>
+        </h:panelGrid>
+	        		
+	        		
+	        		
+	        		<p:panelGrid columns="2">
+                <f:facet name="header">
+                    Basic PanelGrid
+                </f:facet>
+                
+                <h:outputLabel for="firstname2" value="Firstname: *" />
+                <p:inputText id="firstname2" value="#{pprBean.firstname}" label="Firstname" />
+
+                <h:outputLabel for="surname2" value="Surname: *" />
+                <p:inputText id="surname2" value="#{pprBean.surname}" required="true" label="Surname"/>
+                                
+                <f:facet name="footer">
+                    <p:commandButton type="button" value="Save" icon="ui-icon-check" style="margin:0"/>
+                </f:facet>
+            </p:panelGrid>
+            
+            <p:panelGrid style="margin-top:20px">
+                <f:facet name="header">
+                    <p:row>
+                        <p:column colspan="7">1995-96 NBA Playoffs</p:column>
+                    </p:row>
+                    <p:row>
+                        <p:column colspan="2">Conf. Semifinals</p:column>
+                        <p:column colspan="2">Conf. Finals</p:column>
+                        <p:column colspan="2">NBA Finals</p:column>
+                        <p:column>Champion</p:column>
+                    </p:row>
+
+                </f:facet>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;">Seattle</p:column>
+                    <p:column style="font-weight: bold;">4</p:column>
+                    
+                    <p:column rowspan="2" style="font-weight: bold;">Seattle</p:column>
+                    <p:column rowspan="2" style="font-weight: bold;">4</p:column>
+                    
+                    <p:column rowspan="5">Seattle</p:column>
+                    <p:column rowspan="5">2</p:column>
+                    
+                    <p:column rowspan="11" style="font-weight: bold;">Chicago</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column>Houston</p:column>
+                    <p:column >0</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column colspan="4" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;">Utah</p:column>
+                    <p:column style="font-weight: bold;">4</p:column>
+                    
+                    <p:column rowspan="2">Utah</p:column>
+                    <p:column rowspan="2">3</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column>San Antonio</p:column>
+                    <p:column >2</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column colspan="6" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                </p:row>
+               
+                <p:row>
+                    <p:column style="font-weight: bold;">Chicago</p:column>
+                    <p:column style="font-weight: bold;">4</p:column>
+                    
+                    <p:column rowspan="2" style="font-weight: bold;">Chicago</p:column>
+                    <p:column rowspan="2" style="font-weight: bold;">4</p:column>
+                    
+                    <p:column rowspan="5" style="font-weight: bold;">Chicago</p:column>
+                    <p:column rowspan="5" style="font-weight: bold;">4</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column>New York</p:column>
+                    <p:column >1</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column colspan="4" styleClass="ui-widget-header">
+                        <p:spacer height="0"/>
+                    </p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column>Atlanta</p:column>
+                    <p:column >1</p:column>
+                    
+                    <p:column rowspan="2">Orlando</p:column>
+                    <p:column rowspan="2">0</p:column>
+                </p:row>
+                
+                <p:row>
+                    <p:column style="font-weight: bold;">Orlando</p:column>
+                    <p:column style="font-weight: bold;">4</p:column>
+                </p:row>
+                
+                
+                <f:facet name="footer">
+                    <p:row>
+                        <p:column  colspan="4" style="text-align: right">
+                            Finals MVP
+                        </p:column>
+                        <p:column  colspan="3" rowspan="3">
+                            Michael Jordan (Chicago)
+                        </p:column>
+                    </p:row>
+                    
+                    <p:row>
+                        <p:column  colspan="4" style="text-align: right">
+                            Season MVP
+                        </p:column>
+                    </p:row>
+                    <p:row>
+                        <p:column  colspan="4" style="text-align: right">
+                            Top Scorer
+                        </p:column>
+                    </p:row>
+                </f:facet>
+            </p:panelGrid>
+	        </h:form>
+	    </p:layoutUnit>
+	</p:layout>
+
+</h:body> 
+</html>

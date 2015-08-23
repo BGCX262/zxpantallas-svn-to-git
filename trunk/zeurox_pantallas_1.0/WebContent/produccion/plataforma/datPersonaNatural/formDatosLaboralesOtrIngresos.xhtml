@@ -1,0 +1,189 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+				<p:panel>
+					<f:facet name="header">Datos Laborales y Otros Ingresos</f:facet>
+					<p:panelGrid styleClass="width">
+						<p:row> 
+							<p:column>
+								<h:outputText value="Tipo Ingreso:" styleClass="rigth"/>
+							</p:column>
+							<p:column>
+								<p:selectOneMenu styleClass="width_select">
+									<f:selectItem itemLabel="Independiente" />
+									<f:selectItem itemLabel="Independiente" />  
+									<f:selectItem itemLabel="Independiente" />  
+								</p:selectOneMenu>
+							</p:column>
+							<p:column>
+								<h:outputText value="Nombre Empresa:" styleClass="rigth"/>
+							</p:column>
+							<p:column>
+								<p:inputText styleClass="width_input"></p:inputText>
+							</p:column>							
+							<p:column>
+								<h:outputText value="Ingreso Mensual:" styleClass="rigth"/>
+							</p:column>
+							<p:column>
+								<p:inputText styleClass="width_input"></p:inputText>
+							</p:column>
+						</p:row>
+				
+						<p:row> 
+							<p:column>
+								<h:outputText value="Fecha Inicio:" styleClass="rigth"/>
+							</p:column>
+							<p:column>
+								<p:calendar showOn="button" styleClass="left width_input" />	
+							</p:column>
+							<p:column>
+								<h:outputText value="Descripción Cargo:" styleClass="rigth"/>
+							</p:column>									
+							<p:column colspan="3">
+								<p:inputText style="width:725px !important;"></p:inputText>
+							</p:column>				
+						</p:row>
+						
+						<p:row> 
+							<p:column>
+								<h:outputText value="Tipo Teléfono:" styleClass="rigth"/>
+							</p:column>
+							<p:column>
+								<p:selectOneMenu styleClass="width_select">
+									<f:selectItem itemLabel="Fijo" />
+									<f:selectItem itemLabel="Fijo" />  
+									<f:selectItem itemLabel="Fijo" />  
+								</p:selectOneMenu>
+							</p:column>
+							<p:column>
+								<h:outputText value="Número:" styleClass="rigth"/>
+							</p:column>
+							<p:column>
+								<p:inputText styleClass="width_input"></p:inputText>
+							</p:column>							
+							<p:column>
+								<h:outputText value="Anexo:" styleClass="rigth"/>
+							</p:column>
+							<p:column>
+								<p:inputText styleClass="width_input"></p:inputText>
+							</p:column>
+						</p:row>
+					</p:panelGrid>
+					
+					<br/>
+					
+					<p:panelGrid columns="6" styleClass="width">
+					<f:facet name="header">Dirección</f:facet>
+					<h:outputText value="Departamento:*" styleClass="rigth"/>
+					<p:selectOneMenu styleClass="left width_select">
+							<f:selectItem itemLabel="Lima" />
+							<f:selectItem itemLabel="Arequipa" />  
+							<f:selectItem itemLabel="La Libertad" />  
+					</p:selectOneMenu>
+					<h:outputText value="Provincia:*" styleClass="rigth"/>
+					<p:selectOneMenu styleClass="left width_select">
+						<f:selectItem itemLabel="La Libertad" />
+						<f:selectItem itemLabel="Arequipa" />  
+						<f:selectItem itemLabel="Trujillo" />  
+					</p:selectOneMenu>
+					<h:outputText value="Distrito:*" styleClass="rigth"/>
+					<p:selectOneMenu styleClass="left width_select">
+						<f:selectItem itemLabel="Lince" />
+						<f:selectItem itemLabel="Ate" />  
+						<f:selectItem itemLabel="Santiago Cao" />  
+					</p:selectOneMenu>
+					
+					<h:outputText value="Zona:" styleClass="rigth"/>
+					<h:panelGrid columns="2" styleClass="noborder">
+						<p:selectOneMenu styleClass="left width_select2 margin_left">
+							<f:selectItem itemLabel="Anexo" />
+							<f:selectItem itemLabel="Anexo" />  
+							<f:selectItem itemLabel="Anexo" />  
+						</p:selectOneMenu>
+						<p:inputText styleClass="width_input2"></p:inputText>
+					</h:panelGrid>
+					<h:outputText value="Via:" styleClass="rigth"/>
+					<h:panelGrid columns="2" showOn="button" styleClass="noborder">
+						<p:selectOneMenu styleClass="left width_select2 margin_left">
+							<f:selectItem itemLabel="Avenida" />
+							<f:selectItem itemLabel="Avenida" />  
+							<f:selectItem itemLabel="Avenida" />  
+						</p:selectOneMenu>
+						<p:inputText styleClass="width_input2"></p:inputText>
+					</h:panelGrid>
+					<h:outputText value="" />
+					<h:outputText value="" />
+					
+					<h:outputText value="Número:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					<h:outputText value="Lote:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					<h:outputText value="Kilometro:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					<h:outputText value="# Departamento:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					<h:outputText value="Manzana:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					<h:outputText value="Interior:" styleClass="rigth"/>
+					<p:inputText value=""  styleClass="left width_input"/>
+					</p:panelGrid>
+					
+					<p:panel >
+						<h:outputText value="Referencia" />
+						<p:inputTextarea styleClass="width"></p:inputTextarea>
+					</p:panel>
+					
+					<br/>
+					
+					<p:panelGrid columns="2" styleClass="noborder center">
+				     	<p:commandButton value="Agregar"></p:commandButton>	     	
+				     	<p:commandButton value="Limpiar"></p:commandButton>
+		     		</p:panelGrid>
+					
+					<br/>
+					
+					<p:dataTable id="table2" var="tab" value="#{table.listBean}">
+						<p:column headerText="Tipo Ingreso">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Nombre Empresa">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Cargo">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Fecha Ingreso">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Ingreso Mensual">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Telefono">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Dirección Empresa">
+							<h:outputText value="" />
+						</p:column>
+						
+						<p:column headerText="Eliminar">							
+							<h:link value="Eliminar"></h:link>
+						</p:column>
+						
+						<p:column headerText="Editar">
+							<h:link value="Editar"></h:link>
+						</p:column>
+					</p:dataTable>
+					
+					
+					</p:panel>
+</ui:composition>

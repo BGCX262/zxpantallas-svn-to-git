@@ -1,0 +1,32 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+		
+				
+				<p:dataTable id="table2" var="tab" value="#{table.listBean}" style="width:800px;" styleClass="center">
+					
+					<p:column headerText="Mes" >
+					</p:column>
+					
+					<p:column headerText="Fecha Pago"  >
+					</p:column>
+					
+					<p:column headerText="Cuota" >					
+					</p:column>
+					
+					<p:column headerText="Saldo Deudor" >					
+					</p:column>
+					
+					<p:column headerText="Estado" >					
+					</p:column>
+					
+					<p:column headerText="Pagar" >
+						<h:link value="Pagar"></h:link>
+					</p:column>
+				</p:dataTable>
+	
+</ui:composition>

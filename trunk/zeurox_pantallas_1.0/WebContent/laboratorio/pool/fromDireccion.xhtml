@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      > 
+
+<h:head></h:head> 
+<h:body>
+<h:form>
+				<p:panelGrid columns="3"  styleClass="center">
+					<f:facet name="header">Dirección</f:facet>
+				
+					<p:panelGrid columns="2" styleClass="noborder" >
+						<h:outputText value="Departamento:*" />
+						<p:selectOneMenu>
+							<f:selectItem itemLabel="Lima" />
+							<f:selectItem itemLabel="Arequipa" />  
+							<f:selectItem itemLabel="La Libertad" />  
+						</p:selectOneMenu>			
+					</p:panelGrid>
+					<p:panelGrid columns="2" styleClass="noborder" >
+						<h:outputText value="Provincia:*" />
+						<p:selectOneMenu>
+							<f:selectItem itemLabel="La Libertad" />
+							<f:selectItem itemLabel="Arequipa" />  
+							<f:selectItem itemLabel="Trujillo" />  
+						</p:selectOneMenu>			
+					</p:panelGrid>
+					<p:panelGrid columns="2" styleClass="noborder" >
+						<h:outputText value="Distrito:*" />
+						<p:selectOneMenu>
+							<f:selectItem itemLabel="Lince" />
+							<f:selectItem itemLabel="Ate" />  
+							<f:selectItem itemLabel="Santiago Cao" />  
+						</p:selectOneMenu>			
+					</p:panelGrid>
+					
+					
+					<p:panelGrid columns="3" styleClass="noborder" >
+						<h:outputText value="Zona:" />
+						<p:selectOneMenu>
+							<f:selectItem itemLabel="Lince" />
+							<f:selectItem itemLabel="Ate" />  
+							<f:selectItem itemLabel="Santiago Cao" />  
+						</p:selectOneMenu>
+						<p:inputText></p:inputText>			
+					</p:panelGrid>
+					<p:panelGrid columns="3" styleClass="noborder" >
+						<h:outputText value="Via:" />
+						<p:selectOneMenu>
+							<f:selectItem itemLabel="Lince" />
+							<f:selectItem itemLabel="Ate" />  
+							<f:selectItem itemLabel="Avenida" />  
+						</p:selectOneMenu>
+						<p:inputText></p:inputText>			
+					</p:panelGrid>
+					<p:panelGrid columns="2" styleClass="noborder" >
+						<h:outputText value="Referencia:" />
+						<p:inputText></p:inputText>		
+					</p:panelGrid>
+					
+					<p:panelGrid columns="2" styleClass="noborder" >
+						<h:outputText value="Número:" />
+						<p:inputText></p:inputText>		
+					</p:panelGrid>		
+					<p:panelGrid columns="2" styleClass="noborder" >
+						<h:outputText value="Lote:" />
+						<p:inputText></p:inputText>		
+					</p:panelGrid>
+					<h:outputText value="" />
+					
+					<p:panelGrid columns="2" styleClass="noborder" >
+						<h:outputText value="Kilometro:" />
+						<p:inputText></p:inputText>		
+					</p:panelGrid>
+					<p:panelGrid columns="2" styleClass="noborder" >
+						<h:outputText value="# Departamento:" />
+						<p:inputText></p:inputText>		
+					</p:panelGrid>
+					<h:outputText value="" />
+					
+					<p:panelGrid columns="2" styleClass="noborder" >
+						<h:outputText value="Manzana:" />
+						<p:inputText></p:inputText>		
+					</p:panelGrid>
+					<p:panelGrid columns="2" styleClass="noborder" >
+						<h:outputText value="Interior:" />
+						<p:inputText></p:inputText>		
+					</p:panelGrid>
+					<h:outputText value="" />
+					
+				</p:panelGrid>
+				
+				<br/><br/>
+				
+				<p:panelGrid columns="6">
+					<f:facet name="header">Dirección</f:facet>
+					<h:outputText value="Departamento:*" />
+					<p:selectOneMenu>
+							<f:selectItem itemLabel="Lima" />
+							<f:selectItem itemLabel="Arequipa" />  
+							<f:selectItem itemLabel="La Libertad" />  
+					</p:selectOneMenu>
+					<h:outputText value="Provincia:*" />
+					<p:selectOneMenu>
+						<f:selectItem itemLabel="La Libertad" />
+						<f:selectItem itemLabel="Arequipa" />  
+						<f:selectItem itemLabel="Trujillo" />  
+					</p:selectOneMenu>
+					<h:outputText value="Distrito:*" />
+					<p:selectOneMenu>
+						<f:selectItem itemLabel="Lince" />
+						<f:selectItem itemLabel="Ate" />  
+						<f:selectItem itemLabel="Santiago Cao" />  
+					</p:selectOneMenu>
+					
+					<h:outputText value="Zona:" />
+					<h:panelGrid columns="2">
+						<p:selectOneMenu>
+							<f:selectItem itemLabel="Anexo" />
+							<f:selectItem itemLabel="Anexo" />  
+							<f:selectItem itemLabel="Anexo" />  
+						</p:selectOneMenu>
+						<p:inputText></p:inputText>
+					</h:panelGrid>
+					<h:outputText value="Via:" />
+					<h:panelGrid columns="2">
+						<p:selectOneMenu>
+							<f:selectItem itemLabel="Avenida" />
+							<f:selectItem itemLabel="Avenida" />  
+							<f:selectItem itemLabel="Avenida" />  
+						</p:selectOneMenu>
+						<p:inputText></p:inputText>
+					</h:panelGrid>
+					<h:outputText value="" />
+					<h:outputText value="" />
+					
+					<h:outputText value="Número:" />
+					<p:inputText></p:inputText>
+					<h:outputText value="Lote:" />
+					<p:inputText></p:inputText>
+					<h:outputText value="Kilometro:" />
+					<p:inputText></p:inputText>
+					<h:outputText value="# Departamento:" />
+					<p:inputText></p:inputText>	
+					<h:outputText value="Manzana:" />
+					<p:inputText></p:inputText>
+					<h:outputText value="Interior:" />
+					<p:inputText></p:inputText>	
+				</p:panelGrid>
+				
+</h:form>
+</h:body> 
+</html>

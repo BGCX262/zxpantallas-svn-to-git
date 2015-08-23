@@ -1,0 +1,37 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+				<p:panelGrid columns="4" styleClass="width">
+					<f:facet name="header">Información del Documento</f:facet>
+					<h:outputText value="Tipo de Documento:" styleClass="rigth"/>
+					<p:selectOneMenu styleClass="width_select">
+						<f:selectItem itemLabel="Solicitud" />
+						<f:selectItem itemLabel="Solicitud" />  
+						<f:selectItem itemLabel="Solicitud" />  
+					</p:selectOneMenu>
+					<h:outputText value="Asunto:" styleClass="rigth"/>
+					<p:inputText value="" styleClass="width_input"/>
+					<h:outputText value="Área de Destino:" styleClass="rigth"/>
+					<p:selectOneMenu styleClass="width_select">
+						<f:selectItem itemLabel="Gerencia" />
+						<f:selectItem itemLabel="Gerencia" />  
+						<f:selectItem itemLabel="Gerencia" />  
+					</p:selectOneMenu>
+					<h:outputText value="Nombre del Destinatario:" styleClass="rigth"/>
+					<p:selectOneMenu styleClass="width_select">
+						<f:selectItem itemLabel="Rosa Reyna Urquiza" />
+						<f:selectItem itemLabel="Rosa Reyna Urquiza" />  
+						<f:selectItem itemLabel="Rosa Reyna Urquiza" />  
+					</p:selectOneMenu>		
+				</p:panelGrid>
+					
+				<p:panel >
+				<h:outputText value="Descripción:" />
+				<p:inputTextarea styleClass="width"></p:inputTextarea>
+				</p:panel>
+	
+</ui:composition>

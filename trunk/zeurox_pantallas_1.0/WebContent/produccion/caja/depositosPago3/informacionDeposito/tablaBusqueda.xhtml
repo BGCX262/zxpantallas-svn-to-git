@@ -1,0 +1,43 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+		      	xmlns:f="http://java.sun.com/jsf/core"
+		      	xmlns:ui="http://java.sun.com/jsf/facelets"
+		      	xmlns:p="http://primefaces.org/ui"> 
+		
+		
+		
+				
+				<p:dataTable id="table" var="tab" value="#{table.listBean}">
+					<f:facet name="header">
+						<p:outputPanel styleClass="right">
+						    <h:outputText value="Buscar:"  />
+						    <p:inputText id="globalFilter" onkeyup="carsTable.filter()" style="margin-left:10px;" styleClass="width_input" />
+						</p:outputPanel>
+					</f:facet>
+					<p:column headerText="Código" >
+					</p:column>
+					
+					<p:column headerText="Tipo Prestamo"  >
+					</p:column>
+					
+					<p:column headerText="Fecha" >					
+					</p:column>
+					
+					<p:column headerText="Monto" >					
+					</p:column>
+					
+					<p:column headerText="Divisa" >					
+					</p:column>
+					
+					<p:column headerText="Saldo Deudor" >					
+					</p:column>
+					
+					<p:column headerText="Estado" >					
+					</p:column>
+					
+					<p:column headerText="Ver Detalle" >
+						<h:link value="Ver detalle"></h:link>
+					</p:column>
+				</p:dataTable>
+	
+</ui:composition>
